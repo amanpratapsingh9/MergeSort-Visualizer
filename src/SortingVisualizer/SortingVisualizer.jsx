@@ -12,7 +12,7 @@ const NUMBER_OF_ARRAY_BARS = 229;
 const PRIMARY_COLOR = 'turquoise';
 
 // This is the color of array bars that are being compared throughout the animations.
-const SECONDARY_COLOR = 'black';
+const SECONDARY_COLOR = 'orange';
 
 export default class SortingVisualizer extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class SortingVisualizer extends React.Component {
   resetArray() {
     const array = [];
     for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(randomIntFromInterval(9, 229));
+      array.push(randomIntFromInterval(15, 229));
     }
     this.setState({array});
   }
